@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Your Perfect Bike</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="header">Make your choise</h1>
+
+<form class="form">
+  <fieldset class="container">
+    <legend class="question">do you like to do sport?</legend>
+    <label class="label"><input value="road-bike,gravel,mountain-bike" type="radio" class="input input1" name="1">yes</label>
+    <label class="label"><input value="city-bike,cruiser" type="radio" class="input input2" name="1" required>no</label>
+  </fieldset>
+
+  <fieldset class="container">
+    <legend class="question">what kind of traveling do you like?</legend>
+    <label class="label"><input value="road-bike,turing,gravel,mountain-bike" type="radio" class="input input3" name="2">active</label>
+    <label class="label"><input value="city-bike,cruiser,fatbike" type="radio" class="input input4" name="2" required>lazy</label>
+  </fieldset>
+
+  <fieldset class="container">
+    <legend class="question">what kind of cars do you prefer?</legend>
+    <label class="label"><input value="fixed,road-bike" type="radio" class="input input5" name="3">modern and fast</label>
+    <label class="label"><input value="city-bike,cruiser" type="radio" class="input input6" name="3">classic</label>
+    <label class="label"><input value="turing,mountain-bike,fatbike" type="radio" class="input input7" name="3" required>SUV</label>
+  </fieldset>
+
+  <fieldset class="container">
+    <legend class="question">your perfect living location is</legend>
+    <label class="label"><input value="fixed,road-bike" type="radio" class="input input8" name="4">city</label>
+    <label class="label"><input value="turing,gravel,cruiser" type="radio" class="input input9" name="4">town</label>
+    <label class="label"><input value="turing,mountain-bike,fatbike" type="radio" class="input input10" name="4" required>village</label>
+  </fieldset>
+
+  <fieldset class="container">
+    <legend class="question">what counrty would you prefer to visit?</legend>
+    <label class="label"><input value="road-bike" type="radio" class="input input11" name="5">USA</label>
+    <label class="label"><input value="turing,city-bike,fatbike" type="radio" class="input input12" name="5">Nederland</label>
+    <label class="label"><input value="fatbike" type="radio" class="input input13" name="5" required>Egypt</label>
+  </fieldset>
+
+  <input onclick="renderCheckedInputs(); return false;" class="submit" type="submit" value="find out the result" />
+</form>
+
+<div class="display"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

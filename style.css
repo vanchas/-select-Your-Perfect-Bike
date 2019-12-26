@@ -1,0 +1,100 @@
+body { 
+  background: #c9e3f7; 
+  font-family: sans-serif; 
+  padding: 0;
+  margin: 0;
+}
+.form {
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  grid-auto-rows: column;
+  grid-gap: 1em;
+}
+.header {
+  text-align: center;
+  text-shadow: 0 0 10px #af51bf;
+  color: #c9e3f7;
+  font-size: 3em;
+  margin: .2em auto;
+}
+.container {
+  border: none;
+  display: grid;
+  background: #fafafa;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 0 0 1em 0;
+  overflow: hidden;
+}
+.question {
+  margin-bottom: -1.4em;
+  background: linear-gradient(to right, #af51bf, #2196f3);
+  min-height: 2em;
+  max-height: 3em;
+  width: 90%;
+  margin-bottom: .4em;
+  padding: .5em 2em;
+  font-size: 1.4em;
+  color: #fafafa;
+}
+.label {
+  border: 2px solid grey;
+  border-radius: 20px;
+  line-height: 35px;
+  margin: .7em 1.2em 0 1.2em;
+  padding-top: .3em;
+  font-weight: bold;
+  color: #333;
+}
+input {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #9e9e9e;
+    border-radius: 50%;
+    background: white;
+    color: #1417de;
+    box-sizing: content-box;
+    box-shadow: inset 0 0 4px 1px #b1b1b1;
+    cursor: pointer;
+    outline: none;
+  margin: 0 1em;
+}
+input:checked {
+   box-shadow: inset 0 0 3px 3px #fff,
+   inset 0 0 0 2px white,
+   inset 0 0 0 10px #af51bf;
+}
+input:hover {
+   box-shadow: inset 0 0 0 1px #7b7b7b,
+   inset 0 0 0 2px white,
+   inset 0 0 5px 5px #af51bf;
+}
+.submit {
+  height: 2em;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 .5em;
+  border: none;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #af51bf, #2196f3, #af51bf);
+  background-size: 300%;
+  animation: animate 7s linear infinite;
+  border-radius: 30px;
+  color: #fafafa;
+}
+@keyframes animate {
+  0% { background-position: 0%; }
+  100% { background-position: 400%; }
+}
+.display {
+  height: auto;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+  font-size: 2em;
+}
